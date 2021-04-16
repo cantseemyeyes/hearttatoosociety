@@ -1,0 +1,26 @@
+.calendar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar_h2{
+  max-width: 200px;
+}
+
+.icalendar{
+  padding-top: 30px;
+  width: 100%;
+  max-width: 800px;
+  background-color: transparent;
+  box-shadow: 5px 5px 10px rgb(236, 236, 236);
+  max-width: 1000px; 
+  height: 800px;
+  border: none;
+}
+
+@media screen and (max-width:767px){
+  .icalendar{
+    max-height: 350px;
+  }
+}

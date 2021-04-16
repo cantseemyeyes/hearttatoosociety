@@ -1,0 +1,232 @@
+.get_involved{
+    padding: 75px 10px 75px 0px;
+    width: 85%;
+    margin: auto;
+  }
+
+.get_involved_image_left{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.get_involved_image_right{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.get_involved_text_margin{
+  margin: 0px 0px 10px 0px;
+}
+
+
+.get_involved_image_section_background{
+  background: linear-gradient(0deg,rgb(0, 0, 0, 0.9), rgba(54, 54, 54, 0.5)), url(../original_images/community.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+
+
+.get_involved_image_section_text{
+  color: white;
+  border-radius: 2em;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-bottom: none;
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.get_involved_image_section_title{
+  font-size: 2rem;
+  font-weight: bold;
+  display:inherit
+}
+
+.get_involved_font_style_normal{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.circle_profile{
+  max-width: 30%;
+  max-height: 30%;
+  border-radius: 50%;
+}  
+
+.donate_image{
+  max-width: 400px;
+}
+
+.donate_now{
+  text-align: left;
+  padding: 75px 10px 75px 20px;
+  margin: auto;
+}
+
+.donation_image_icon{
+  width: 60px;
+}
+
+.donation_image_flex{
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: auto;
+  height: 120px;
+}
+
+.donation_text_margin{
+  margin-left: 25px;
+  margin-top:25px;
+  margin-bottom: 25px;
+  align-self: center;
+}
+
+.dollar_color{
+  color: var(--tertiary-color);
+}
+
+.donation_details{
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 75px;
+  text-align: left;
+  grid-gap: 0px 20px;
+}
+
+
+.become_a_donor_padding{
+  padding-bottom: 25px;
+}
+
+.food_donation_details{
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  text-align: left;
+  grid-gap: 0px 20px;
+}
+
+.food_donation_title{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.food_donation_margin{
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.food_donation_text_margin{
+  width: 90%;
+  margin: auto;
+  padding-bottom: 40px;
+  font-weight: 500;
+}
+
+
+
+
+
+@media screen and (min-width:720px){
+  .get_involved{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    max-width: 1000px;
+  }
+
+  .get_involved_image_left{
+    margin-right: 50px;
+    max-width: 300px;
+    object-fit: cover;
+  }
+
+
+  .get_involved_image_right{
+    margin-left: 50px;
+    max-width: 300px;
+    object-fit: cover;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  
+  .get_involved_text_margin{
+    padding: 0px 0px 10px 0px;
+  }
+
+  .volunteer_features{
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 900px;
+  }
+
+  .get_involved_image_section_text{
+    max-width: 90%;
+    text-align: left;
+    margin: auto;
+  }
+  
+  .circle_profile{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+  }  
+
+  .donation_details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .food_donation_details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+
+@media screen and (max-width:767px){
+  .get_involved_image_section_text{
+    font-size: 1.3rem;
+  }
+
+  .get_involved_image_section_title{
+    font-size: 1.8rem;
+  }
+  .circle_profile{
+    padding-bottom: 20px;
+  }
+
+
+}
+
+
+
+@media screen and (min-width:1000px){
+    .get_involved_image{
+        max-width: 500px;
+        object-fit: cover;
+      }
+    .donation_details{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

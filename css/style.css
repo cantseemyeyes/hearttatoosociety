@@ -1,0 +1,376 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root{
+  --primary-color:white;
+  --secondary-color: rgb(235, 235, 235);
+  --tertiary-color: red;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Lato', sans-serif;
+    color:black;
+    line-height: 150%
+}
+
+h1{ font-size: 4rem}
+h2{font-size: 2.5rem}
+h3{font-size: 2rem}
+h4{font-size: 1.8rem}
+h5{font-size: 1.5rem}
+h6{font-size: 1.2rem}
+p{font-size: 1rem}
+
+h1{
+  padding: 120px 0px 0px 0px;
+  max-width: 100%;
+  margin-top: 100px;
+  color: white;
+  padding: 25px 20px 0px 20px;
+  border-radius: 2em;
+}
+
+h2{
+  display:inline-block;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  border-bottom: 2.5px solid black;
+  margin-bottom: 5px;
+}
+
+h3{
+  display:inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2.5px solid var(--tertiary-color);
+
+}
+
+h5{
+  font-weight: 500;
+}
+
+section, aside, footer{
+  margin-top: 0px;
+  padding: 10px;
+}
+
+section{
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 0px;
+}
+
+header{
+  text-align: center;
+}
+
+body{
+  margin: 0px;
+  flex: 1;
+}
+
+nav{
+  padding-bottom: 1px;
+  width: 100%;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+footer div{
+  text-align: left;
+}
+  
+footer h5, footer p{
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+footer p{
+  max-width: 100px;
+}
+
+footer h5{
+  max-width: 164px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+
+
+
+.logo{
+    position: absolute;
+}
+
+.logo_size{
+  max-width: 100px;
+}
+
+.container{
+  max-width: 767px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.header_p{
+  color: white;
+  font-size: 1.5rem;
+  border-bottom: none;
+  max-width: 600px;
+  font-weight: bold;
+}
+
+.navigation_design{
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  list-style-type:none;
+}
+
+.navigation_list{
+  display: block;
+  text-align: center;
+  background-color: rgba(15, 15, 15, 0.8);
+  color: white;
+  max-width: 100%;
+
+}
+
+.navigation_list:hover{
+  color: white;
+  background-color: rgba(255, 0, 0, 0.692);
+  text-decoration: none;
+}
+
+.navigation_list:visited{
+  color:white;
+}
+
+.heart_tattoo_society{
+  float:right;
+  max-width: 240px;
+}
+
+.background_image{
+  position:inherit;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  background: linear-gradient(0deg,rgb(0, 0, 0, 0.9), rgba(54, 54, 54, 0.5)), url(../images/christmas_food.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.white-background{
+  background-color: white;
+}
+
+.text_red{
+  color: rgba(255, 0, 0, 0.822);
+}
+
+.grey_background{
+  background-color: rgb(235, 235, 235);
+}
+
+.make_an_impact{
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  margin: auto;
+}
+
+.make_an_impact_image{
+  max-width: 90%;
+  object-fit: cover;
+}
+
+.make_an_impact_text_margin{
+  max-width: 90%;
+  margin: 5px auto 20px auto;
+}
+
+.social_media_icon{
+  width: 50px;
+  align-self: baseline;
+}
+
+.figure_social_media{
+  margin: auto 10px 15px 0px;
+}
+
+.footer_logo{
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+
+@media screen and (max-width:600px){
+  footer p{
+    font-size: 0.5rem;
+  }
+
+  footer h5{
+    font-size: 1rem;
+    max-width: 109px;
+    margin-bottom: 10px;
+  }
+
+  .footer_logo{
+    max-width: 50px;
+  }
+
+  .social_media_icon{
+    max-width: 25px;
+  }
+
+  .figure_social_media{
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-bottom: 8px;
+  }
+
+  .social_media_icons{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+  }
+}
+
+@media screen and (min-width:601px){
+  .social_media_icons{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+  }
+}
+
+@media screen and (max-width:699px){
+  h1 {
+    padding-top: 50px;
+    font-size: 2rem;
+  }
+
+  .header_p{
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .donate_now_cta {
+    display: none;
+  }
+
+  .contact_us_cta{
+    display: none;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    }
+  
+  .change .navigation_design {
+    display: none;
+  }
+  .navigation_list{
+  padding: 15px;
+  } 
+
+}
+
+
+@media screen and (min-width:700px){
+  .nav-li{
+      flex:1;		
+    }	
+
+  .navigation_design{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .navigation_width{
+    margin: 0px 5px 0px 10px;
+  }
+  .transparent_wrapper{
+    max-width: 1000px;
+    margin: auto;
+  }
+  .navigation_list{
+    border-left: 1px solid rgba(255, 255, 255, 0.233);
+    align-items: center;
+  }
+
+  #nav-design{
+		display:flex;
+	}
+}
+
+
+@media screen and (min-width:793px){
+  .make_an_impact{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: left;
+    width: 100%;
+  }
+
+  .make_an_impact_image{
+    margin-right: 50px;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .make_an_impact_text_margin{
+    max-width: 95%;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .navigation_width{
+    margin: auto;
+  }
+}
