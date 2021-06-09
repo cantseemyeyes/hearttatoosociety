@@ -5,6 +5,7 @@
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
         <link href="css/style.css" rel="stylesheet">
@@ -14,18 +15,39 @@
         <link href="css/cta.css" rel="stylesheet">
         <link href="css/hamburger_navigation.css" rel="stylesheet">
         <link href="css/popup.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         
         <header>
             <div class="background_image">
-                <a class="logo" href="index.html"><img class="logo_size" src="images/heart_tattoo.PNG" alt="logo of Heart Tatoo Society"></a>
+                <a class="logo reg_navbar" href="index.html"><img class="logo_size" src="images/heart_tattoo.PNG" alt="logo of Heart Tatoo Society"></a>
                 <div id="top_bar">
                     <button id="btn_menu">MENU</button>
                 </div>
-                <nav>
+                <nav class="reg_navbar">
                     <ul class="navigation_design">
+                        <li class="navigation_width"><a class="navigation_list" href="what_we_do.html">What We Do</a></li>
+                        <li class="navigation_width"><a class="navigation_list" href="get_involved.html">Get Involved</a></li>
+                        <li class="navigation_width"><a class="navigation_list" href="donate_now.html">Donations</a></li>
+                        <li class="navigation_width"><a class="navigation_list" href="events.html">Events</a></li>
+                        <li class="contact_cta_width trigger_popup_fricc"><a class="contact_us_cta">Contact</a></li>
+                        <li class="donate_cta_width"><a class="donate_now_cta" href="https://www.paypal.com/donate?business=7YE6J5Q7XLFR6&currency_code=CAD">Donate</a></li>
+                    </ul>
+                </nav>
+
+                <nav id="sticky_navbar">
+                    <a class="logo" href="index.html"><img class="logo_size sticky_logo" src="images/heart_tattoo.PNG" alt="logo of Heart Tatoo Society"></a>
+                    <div id="top_bar">
+                        <button id="btn_menu">MENU</button>
+                    </div>
+                    <ul class="navigation_design sticky_navigation_design">
+                        <li class="navigation_width"><a class="navigation_list" href=></a></a></li>
+                        <li class="navigation_width"><a class="navigation_list" href=></a></a></li>
+                        <li class="navigation_width"><a class="navigation_list" href=></a></a></li>
+                        <li class="navigation_width"><a class="navigation_list" href=></a></a></li>
+                        <li class="navigation_width"><a class="navigation_list" href=></a></a></li>
                         <li class="navigation_width"><a class="navigation_list" href="what_we_do.html">What We Do</a></li>
                         <li class="navigation_width"><a class="navigation_list" href="get_involved.html">Get Involved</a></li>
                         <li class="navigation_width"><a class="navigation_list" href="donate_now.html">Donations</a></li>
@@ -41,6 +63,8 @@
                     <a class="header_right_cta" href="get_involved.html">Get Involved!</a>
             </div>
         </header>
+
+        
 
         <div id="wrapper">
             <main>
@@ -238,8 +262,22 @@
 
             <footer>
                 <div>
-                    <h5>The Heart Tattooo Society</h5>
-                    <img class="footer_logo" src="images/heart_tattoo.PNG" alt="logo of Heart Tatoo Society">
+                </div>
+                <div>
+                    <img class="footer_logo" src="images/heart_tattoo_black-1.png" alt="logo of Heart Tatoo Society">
+                    <div id="social_media_icons_flex">
+                        <div class="figure_social_media">
+                            <a href="https://www.linkedin.com"> <i class="fa fa-linkedin-square fa-2x"></i></a>
+                        </div>
+    
+                        <div class="figure_social_media">
+                            <a href="https://www.instagram.com"> <i class="fa fa-instagram fa-2x"></i></a>
+                        </div>
+    
+                        <div class="figure_social_media">
+                            <a href="https://www.facebook.com"> <i class="fa fa-facebook-square fa-2x"></i></a>
+                        </div>
+                    </div>    
                 </div>
                 <div>
                     <p><a href="index.html">Home</a></p>
@@ -252,24 +290,7 @@
                     <p><a href="">Donate Now</a></p>
                     <p><a class="trigger_popup_fricc">Contact Us</a></p>
                 </div>
-                <div class="social_media_icons">
-                    <figure class="figure_social_media"><a href="https://www.linkedin.com">
-                        <img src="images/linkedin.png"
-                            alt="picture of linkedin logo"
-                            class="social_media_icon"/></a>
-                    </figure>
-
-                    <figure class="figure_social_media"><a href="https://www.facebook.com">
-                        <img src="images/facebook.svg"
-                            alt="picture of facebook logo"
-                            class="social_media_icon"/></a>
-                    </figure>
-
-                    <figure class="figure_social_media"><a href="https://www.instagram.com">
-                        <img src="images/instagram.svg"
-                            alt="picture of instagram logo"
-                            class="social_media_icon"/></a>
-                    </figure>
+                <div>
                 </div>
             </footer>
         </div>

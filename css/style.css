@@ -101,6 +101,10 @@ footer p{
   max-width: 100px;
 }
 
+footer p a:hover{
+  color: rgb(182, 182, 182)
+}
+
 footer h5{
   max-width: 164px;
 }
@@ -110,15 +114,17 @@ a{
   color: var(--primary-color);
 }
 
-
-
-
 .logo{
     position: absolute;
 }
 
 .logo_size{
   max-width: 100px;
+  filter: drop-shadow(0 0 0.3rem black);
+}
+
+.sticky_logo{
+  filter: drop-shadow(0 0 0.3rem black);
 }
 
 .container{
@@ -207,18 +213,21 @@ a{
   margin: 5px auto 20px auto;
 }
 
-.social_media_icon{
-  width: 50px;
-  align-self: baseline;
-}
-
 .figure_social_media{
-  margin: auto 10px 15px 0px;
+  margin: 0px 7px 0px 7px;
 }
 
 .footer_logo{
-  max-width: 100px;
-  margin-bottom: 10px;
+  max-width: 175px;
+}
+
+.fa:hover{
+  color: rgb(182, 182, 182);
+}
+
+#social_media_icons_flex{
+  display: flex;
+  justify-content: center;
 }
 
 #wrapper{
@@ -241,11 +250,7 @@ a{
   }
 
   .footer_logo{
-    max-width: 50px;
-  }
-
-  .social_media_icon{
-    max-width: 25px;
+    width: 100px;
   }
 
   .figure_social_media{
@@ -259,6 +264,7 @@ a{
     flex-direction: row;
     align-content: flex-end;
   }
+
 }
 
 @media screen and (min-width:601px){
@@ -331,6 +337,10 @@ a{
     margin-top: 50px;
   }
 
+  .sticky_navigation_design{
+    margin-top: 25px;
+  }
+
   .navigation_width{
     margin: 0px 5px 0px 10px;
   }
@@ -345,7 +355,21 @@ a{
 
   #nav-design{
 		display:flex;
-	}
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #sticky_navbar{
+    background-color: rgba(0, 0, 0, 0.473);
+    display: none;
+    padding-bottom: 25px;
+    max-width: 100%;
+    margin-top: 0px;
+  }
 }
 
 
