@@ -203,6 +203,11 @@ a{
   margin: auto;
 }
 
+.sponsor_image{
+  padding: 5px 0px 5px 0px;
+  width: 100%;
+}
+
 .make_an_impact_image{
   max-width: 90%;
   object-fit: cover;
@@ -223,6 +228,14 @@ a{
 
 .fa:hover{
   color: rgb(182, 182, 182);
+}
+
+.stay_updated{
+  margin: 0px 25px 30px 25px;
+}
+
+#stay_updated_title{
+  margin-top: 0px;
 }
 
 #social_media_icons_flex{
